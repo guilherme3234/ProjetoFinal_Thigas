@@ -2,6 +2,11 @@ import Navbar from 'react-bootstrap/Navbar'
 import  Container  from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 function Header({btn}) {
+   
+   function sair(){
+    localStorage.removeItem('key')
+    location.href = "/"
+   }   
     return (
         <header>
             <Navbar variant='dark'>
